@@ -1,0 +1,47 @@
+import type { ImprovementItem } from '@shared/types/academy'
+import { MOCK_PERSONS } from './persons'
+
+export const MOCK_IMPROVEMENT_ITEMS: ImprovementItem[] = [
+  {
+    id: '6a000000-0000-4000-8000-000000000001',
+    item_name: 'SOP đặt tên thư mục',
+    reason_with_data: '3 team sai format 2 tháng liên tiếp (Log T11, T12)',
+    decision: 'update',
+    status: 'completed',
+    change_description: 'Thêm bảng ví dụ tên chuẩn vào SOP',
+    assignee_person_id: MOCK_PERSONS[1].id,
+    due_date: '2025-01-15T17:00:00.000Z',
+    result: '+30% compliance sau 1 tháng',
+    created_by_person_id: MOCK_PERSONS[0].id,
+    created_at: '2025-01-05T10:00:00.000Z',
+    updated_at: '2025-01-20T09:00:00.000Z',
+  },
+  {
+    id: '6a000000-0000-4000-8000-000000000002',
+    item_name: 'Template backup checklist',
+    reason_with_data: 'Member mất 2 bước vì không có checklist rõ',
+    decision: 'update',
+    status: 'in_progress',
+    change_description: 'Tạo checklist 5 bước',
+    assignee_person_id: MOCK_PERSONS[2].id,
+    due_date: '2025-02-01T17:00:00.000Z',
+    result: 'Đang đo lường',
+    created_by_person_id: MOCK_PERSONS[0].id,
+    created_at: '2025-01-20T10:00:00.000Z',
+    updated_at: '2025-02-05T09:00:00.000Z',
+  },
+  {
+    id: '6a000000-0000-4000-8000-000000000003',
+    item_name: 'Quy trình Training T2019',
+    reason_with_data: 'Không team nào dùng trong 12 tháng',
+    decision: 'archive',
+    status: 'completed',
+    change_description: 'Di chuyển vào /Archive',
+    assignee_person_id: MOCK_PERSONS[4].id,
+    due_date: '2025-02-28T17:00:00.000Z',
+    result: 'Đã archive',
+    created_by_person_id: MOCK_PERSONS[0].id,
+    created_at: '2025-01-25T10:00:00.000Z',
+    updated_at: '2025-02-28T16:00:00.000Z',
+  },
+]

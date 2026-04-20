@@ -1,0 +1,46 @@
+import type { TranslateLogEntry } from '@shared/types/academy'
+import { MOCK_PERSONS } from './persons'
+
+export const MOCK_TRANSLATE_LOG: TranslateLogEntry[] = [
+  {
+    id: '5a000000-0000-4000-8000-000000000001',
+    requester_name: 'N-EDU',
+    document_name: 'Training Workbook N-EDU',
+    language: 'en_to_vi',
+    priority: 'normal',
+    deadline: '2025-01-20T17:00:00.000Z',
+    assignee_person_id: MOCK_PERSONS[2].id,
+    status: 'done',
+    received_at: '2025-01-05T08:00:00.000Z',
+    created_by_person_id: MOCK_PERSONS[0].id,
+    created_at: '2025-01-05T08:00:00.000Z',
+    updated_at: '2025-01-19T16:00:00.000Z',
+  },
+  {
+    id: '5a000000-0000-4000-8000-000000000002',
+    requester_name: 'Design',
+    document_name: 'Prompt Library Design',
+    language: 'en_to_vi',
+    priority: 'high',
+    deadline: '2025-03-20T17:00:00.000Z',
+    assignee_person_id: MOCK_PERSONS[3].id,
+    status: 'in_progress',
+    received_at: '2025-03-15T09:00:00.000Z',
+    created_by_person_id: MOCK_PERSONS[1].id,
+    created_at: '2025-03-15T09:00:00.000Z',
+    updated_at: '2025-03-15T09:00:00.000Z',
+  },
+  {
+    id: '5a000000-0000-4000-8000-000000000003',
+    requester_name: 'Social',
+    document_name: 'Content Calendar Q2',
+    language: 'vi_to_en',
+    priority: 'urgent',
+    deadline: '2025-04-10T17:00:00.000Z',
+    status: 'pending_assignment',
+    received_at: '2025-04-07T14:00:00.000Z',
+    created_by_person_id: MOCK_PERSONS[2].id,
+    created_at: '2025-04-07T14:00:00.000Z',
+    updated_at: '2025-04-07T14:00:00.000Z',
+  },
+]
